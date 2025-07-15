@@ -1,9 +1,15 @@
 import { GitBranch, Heart, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <SEO
+        title="Privacy Policy - PrioLab"
+        description="Learn about PrioLab's privacy practices, data collection policies, and how we protect your information when using our issue prioritization platform."
+        url="/privacy"
+      />
       {/* Header */}
       <header className="border-b border-slate-700/50 bg-slate-800/50 backdrop-blur-xl sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">

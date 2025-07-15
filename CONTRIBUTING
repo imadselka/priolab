@@ -1,0 +1,172 @@
+# Contributing to PrioLab
+
+First off, **thank you** for your interest in contributing to PrioLab! 🎉 Your help—no matter how small—is appreciated!
+
+## Table of Contents
+- [What You Can Contribute](#what-you-can-contribute)
+- [Code of Conduct](#code-of-conduct)
+- [Getting Started](#getting-started)
+- [Workflow](#workflow)
+- [Commit Guidelines](#commit-guidelines)
+- [Branching & Pull Requests](#branching--pull-requests)
+- [Issue Reporting](#issue-reporting)
+- [Testing](#testing)
+- [Community & Support](#community--support)
+
+---
+
+## What You Can Contribute
+- **Code**: new features, bug fixes, performance improvements
+- **Documentation**: fixing typos, improving README, adding tutorials
+- **Issues**: identifying bugs or suggesting enhancements
+- **Testing**: writing unit tests, test coverage improvements
+- **Design/UI**: suggestions or improvements to the project's UI/UX
+
+---
+
+## Code of Conduct
+All contributors are expected to adhere to our [Code of Conduct](./CODE_OF_CONDUCT.md). Please review it before participating.
+
+---
+
+## Getting Started
+1. **Fork** the repository to your GitHub account
+2. **Clone** your fork locally:
+   ```bash
+   git clone https://github.com/yourusername/priolab.git
+   cd priolab
+   ```
+3. **Install dependencies**:
+   ```bash
+   pnpm install
+   ```
+4. **Set up environment variables**:
+   - Create a `.env.local` file based on the `.env.example` template
+   - Configure your Supabase and GitHub credentials as needed
+
+5. **Start the development server**:
+   ```bash
+   pnpm dev
+   ```
+
+---
+
+## Workflow
+1. **Create a new branch** for your feature or fix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+   or
+   ```bash
+   git checkout -b fix/issue-you-are-fixing
+   ```
+
+2. **Make your changes** and write appropriate tests
+
+3. **Test your changes** to ensure they work as expected:
+   ```bash
+   pnpm test
+   ```
+
+4. **Lint your code**:
+   ```bash
+   pnpm lint
+   ```
+
+5. **Commit your changes** following our commit guidelines
+
+6. **Push to your fork**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+7. **Submit a pull request** to the main repository
+
+---
+
+## Commit Guidelines
+
+We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification. This means commit messages should be structured as follows:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+Types include:
+- **feat**: A new feature
+- **fix**: A bug fix
+- **docs**: Documentation changes
+- **style**: Code style changes (formatting, semicolons, etc)
+- **refactor**: Code changes that neither fix bugs nor add features
+- **perf**: Performance improvements
+- **test**: Adding or modifying tests
+- **chore**: Changes to build process, dependencies, etc.
+
+Examples:
+```
+feat(auth): add GitHub OAuth login
+fix(issues): resolve vote count display bug
+docs: update installation instructions
+```
+
+---
+
+## Branching & Pull Requests
+
+### Branch Naming
+- `feature/` - For new features
+- `fix/` - For bug fixes
+- `docs/` - For documentation updates
+- `refactor/` - For refactoring existing code
+
+### Pull Request Process
+1. Fill out the PR template completely
+2. Link any related issues
+3. Ensure CI passes (tests, linting)
+4. Request review from at least one maintainer
+5. Address all feedback
+6. Wait for approval and merge
+
+---
+
+## Issue Reporting
+
+When reporting issues, please use the issue templates provided. Include:
+- Clear description of the problem
+- Steps to reproduce
+- Expected vs. actual behavior
+- Screenshots or GIFs if applicable
+- Environment information (browser, OS, etc.)
+
+---
+
+## Testing
+
+- All new features should include relevant tests
+- Tests should be in the same directory as the code they're testing
+- Run tests with `pnpm test` before submitting PRs
+- Aim to maintain or improve test coverage
+
+### Testing Stack
+- Vitest for unit and integration testing
+- Testing Library for component tests
+- Playwright for end-to-end testing (when applicable)
+
+---
+
+## Community & Support
+
+- **GitHub Discussions**: For questions, ideas, and general discussion
+- **Issues**: For bugs and feature requests
+- **Discord**: Join our community Discord server for real-time help
+- **Documentation**: Check our [docs site](https://docs.priolab.dev) for guides
+
+---
+
+Thank you for contributing to PrioLab! Your efforts help make this project better for everyone.
+
+*By contributing to this project, you agree to abide by our Code of Conduct and license your contributions under the project's MIT license.*

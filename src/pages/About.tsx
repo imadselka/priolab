@@ -1,9 +1,15 @@
 import { GitBranch, Heart, ArrowLeft, Users, Target, Code, Zap, Globe, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <SEO
+        title="About PrioLab - Our Mission & Values"
+        description="Learn about PrioLab's mission to democratize open source development by giving every developer a voice in prioritizing the issues that matter most."
+        url="/about"
+      />
       {/* Header */}
       <header className="border-b border-slate-700/50 bg-slate-800/50 backdrop-blur-xl sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">

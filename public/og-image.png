@@ -1,0 +1,11 @@
+.og-image-placeholder {
+  display: block;
+  width: 1200px;
+  height: 630px;
+  background-color: #2563eb;
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 250px;
+}

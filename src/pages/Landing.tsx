@@ -17,6 +17,7 @@ import {
   Sparkles
 } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
+import SEO from "@/components/SEO";
 
 export default function Landing() {
   const [isSigningIn, setIsSigningIn] = useState(false);
@@ -31,6 +32,11 @@ export default function Landing() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <SEO 
+        title="PrioLab - Community-Driven Issue Prioritization for Developers"
+        description="Discover, prioritize, and collaborate on GitHub issues through community voting and intelligent ranking algorithms."
+        url="/"
+      />
       {/* Header */}
       <header className="border-b border-slate-700/50 bg-slate-800/50 backdrop-blur-xl sticky top-0 z-50">
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
